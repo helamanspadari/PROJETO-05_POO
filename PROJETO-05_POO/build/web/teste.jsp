@@ -1,9 +1,3 @@
-<%-- 
-    Document   : teste
-    Created on : 10/05/2017, 23:01:48
-    Author     : PA01
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,8 +6,10 @@
         <title>PROJETO-05</title>
     </head>
     <body>
+        <%@include file="META-INF/header.jspf" %>
+        <hr/>
         <h1>Questionario</h1>
         <hr/>
-        
+        <%@include file="META-INF/footer.jspf" %>
     </body>
 </html>
