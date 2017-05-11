@@ -12,8 +12,10 @@
         <title>PROJETO-05</title>
     </head>
     <body>
+        <%@include file="META-INF/header.jspf" %>
+        <hr/>
         <h1>Questionario</h1>
         <hr/>
-        
+        <%@include file="META-INF/footer.jspf" %>
     </body>
 </html>
