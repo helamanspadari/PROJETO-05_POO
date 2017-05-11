@@ -1,9 +1,5 @@
-<%-- 
-    Document   : index
-    Created on : 10/05/2017, 22:55:31
-    Author     : PA01
---%>
-
+<%@page import="br.com.fatecpg.classes.Question"%>
+<%@page import="br.com.fatecpg.classes.Quiz"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
