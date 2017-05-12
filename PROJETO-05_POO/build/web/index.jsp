@@ -22,8 +22,6 @@
 			</div>
 		</div>
 <hr>
-
-
         <div class="section section-white">
 	        <div class="container">
 	        	<div class="row">
@@ -36,53 +34,53 @@
 			<ul class="grid cs-style-3">
 	        	<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/luiz.jpg" alt="img04">
+						<img src="img/portfolio/luiz.jpg" alt="luiz">
 						<figcaption>
-							<h3>Luiz Spinelli</h3>
-							<span>Bootstrap e estilização</span>
+							<h3>Luiz Spinelli</h3> <!--Nome-->
+							<span>Bootstrap e estilização</span> <!--O que fez-->
 							<a href="#">Mais</a>
 						</figcaption>
 					</figure>
 	        	</div>	
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/andre.jpg" alt="img01">
+						<img src="img/portfolio/andre.jpg" alt="andre add uma foto sua">
 						<figcaption>
-							<h3>André</h3>
-							<span>...</span>
+							<h3>André</h3> <!--Nome-->
+							<span>...</span> <!--O que fez-->
 							<a href="#">Mais</a>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/helaman.jpg" alt="img02">
+						<img src="img/portfolio/helaman.jpg" alt="helaman add uma foto sua">
 						<figcaption>
-							<h3>Helaman</h3>
-							<span>...</span>
+							<h3>Helaman</h3> <!--Nome-->
+							<span>...</span> <!--O que fez-->
 							<a href="#">Mais</a>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/higor.jpg" alt="img05">
+						<img src="img/portfolio/higor.jpg" alt="higor add uma foto sua">
 						<figcaption>
-							<h3>Higor</h3>
-							<span>...</span>
+							<h3>Higor</h3> <!--Nome-->
+							<span>...</span> <!--O que fez-->
 							<a href="#">Mais</a>
 						</figcaption>
 					</figure>
 				</div>
                             	<div class="col-md-4 col-sm-6">
-
+                                    <!--Vazio pra alinhar-->
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/raul.jpg" alt="img03">
+						<img src="img/portfolio/raul.jpg" alt="raul add uma foto sua">
 						<figcaption>
-							<h3>Raul</h3>
-							<span>...</span>
+							<h3>Raul</h3> <!--Nome-->
+							<span>...</span> <!--O que fez-->
 							<a href="#">Mais</a>
 						</figcaption>
 					</figure>
