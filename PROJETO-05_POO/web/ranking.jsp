@@ -12,10 +12,12 @@
 	        	<div class="row">
 	
 				<div class="section-title">
-				<h1>WebQuiz</h1>
+				<h1>Ranking</h1>
 				</div>
                             
+                            
                             <!--Código nessa div-->
+                            
                             
                         </div>
                 </div>

@@ -37,8 +37,7 @@
 						<img src="img/portfolio/luiz.jpg" alt="luiz">
 						<figcaption>
 							<h3>Luiz Spinelli</h3> <!--Nome-->
-							<span>Bootstrap e estilização</span> <!--O que fez-->
-							<a href="#">Mais</a>
+							<span style="color:#aec62c;">Bootstrap e estilização</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 	        	</div>	
@@ -47,8 +46,7 @@
 						<img src="img/portfolio/andre.jpg" alt="andre add uma foto sua">
 						<figcaption>
 							<h3>André</h3> <!--Nome-->
-							<span>...</span> <!--O que fez-->
-							<a href="#">Mais</a>
+							<span style="color:#aec62c;">...</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 				</div>
@@ -57,8 +55,7 @@
 						<img src="img/portfolio/helaman.jpg" alt="helaman add uma foto sua">
 						<figcaption>
 							<h3>Helaman</h3> <!--Nome-->
-							<span>...</span> <!--O que fez-->
-							<a href="#">Mais</a>
+							<span style="color:#aec62c;">...</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 				</div>
@@ -67,8 +64,7 @@
 						<img src="img/portfolio/higor.jpg" alt="higor add uma foto sua">
 						<figcaption>
 							<h3>Higor</h3> <!--Nome-->
-							<span>...</span> <!--O que fez-->
-							<a href="#">Mais</a>
+							<span style="color:#aec62c;">...</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 				</div>
@@ -80,8 +76,7 @@
 						<img src="img/portfolio/raul.jpg" alt="raul add uma foto sua">
 						<figcaption>
 							<h3>Raul</h3> <!--Nome-->
-							<span>...</span> <!--O que fez-->
-							<a href="#">Mais</a>
+							<span style="color:#aec62c;">...</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 				</div>
