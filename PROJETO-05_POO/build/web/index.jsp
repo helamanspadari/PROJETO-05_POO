@@ -61,10 +61,10 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/higor.jpg" alt="higor add uma foto sua">
+						<img src="img/portfolio/higor.jpg" alt="Higor Moroni">
 						<figcaption>
-							<h3>Higor</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span> <!--O que fez-->
+							<h3>Higor Moroni</h3> <!--Nome-->
+							<span style="color:#aec62c;">Não fez nada de útil</span>
 						</figcaption>
 					</figure>
 				</div>
