@@ -1,5 +1,7 @@
 <%@page import="br.com.fatecpg.classes.Quiz"%>
 <%@page import="br.com.fatecpg.classes.Question"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.lang.Comparable"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,11 +25,14 @@
                                     <th>Pontuação média</th>
                                     
                                 </tr>
-                                <tr>
-                                    <td>Nome</td> <!--getNome-->
-                                    <td><%= 100*Quiz.getUltimaGrade()%></td>
-                                    <td><%= 100*Quiz.getGradeMedia()%></td>
-                                </tr>
+                                <%Collections.sort(add/*TODO*/);%>
+                                <%for (int i=0;i<10;i++) {%>
+                                    <tr>
+                                        <td>Nome</td> <!--getNome-->
+                                        <td><%= 100*Quiz.getUltimaGrade()%></td>
+                                        <td><%= 100*Quiz.getGradeMedia()%></td>
+                                    </tr>
+                                <%}%>
                             </table>
                             </div>
                         </div>
