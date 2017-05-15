@@ -23,11 +23,13 @@
                                     <th>Pontuação média</th>
                                     
                                 </tr>
-                                <tr>
-                                    <td>Nome</td> <!--getNome-->
-                                    <td><%= 100*Quiz.getUltimaGrade()%></td>
-                                    <td><%= 100*Quiz.getGradeMedia()%></td>
-                                </tr>
+                                <%for (int i=0;i<10;i++) {%>
+                                    <tr>
+                                        <td>Nome</td> <!--getNome-->
+                                        <td><%= 100*Quiz.getUltimaGrade()%></td>
+                                        <td><%= 100*Quiz.getGradeMedia()%></td>
+                                    </tr>
+                                <%}%>
                             </table>
                             </div>
                         </div>
