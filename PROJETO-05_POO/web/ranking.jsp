@@ -1,3 +1,5 @@
+<%@page import="br.com.fatecpg.classes.Quiz"%>
+<%@page import="br.com.fatecpg.classes.Question"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,17 +14,26 @@
 	        	<div class="row">
 	
 				<div class="section-title">
-				<h1>Ranking</h1>
+				<h1>Pontuação</h1>
 				</div>
-                            
-                            
-                            <!--Código nessa div-->
-                            
-                            
+                            <div class="col-md-4 col-sm-6">
+                            <table class="table table-bordered table-responsive">
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Última pontuação</th>
+                                    <th>Pontuação média</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Nome</td> <!--getNome-->
+                                    <td><%= 100*Quiz.getUltimaGrade()%></td>
+                                    <td><%= 100*Quiz.getGradeMedia()%></td>
+                                </tr>
+                            </table>
+                            </div>
                         </div>
                 </div>
         </div>
-        <hr/>
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

@@ -2,8 +2,8 @@ package br.com.fatecpg.classes;
 import java.util.ArrayList;
 public class Quiz {
     private static int testesCont = 0;
-    private static double testesGradeSum = 0.0;
-    private static double ultmaGrade = 0.0;
+    private static double testesGradeSum = 0;
+    private static double ultmaGrade = 0;
     private static ArrayList<Question> teste;
     
     public static ArrayList<Question> getTeste(){

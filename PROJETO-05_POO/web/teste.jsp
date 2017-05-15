@@ -8,10 +8,18 @@
         Quiz.validarTeste(new String[]{
             request.getParameter("0"),
             request.getParameter("1"),
-            request.getParameter("2")
+            request.getParameter("2"),
+            request.getParameter("3"),
+            request.getParameter("4"),
+            request.getParameter("5"),
+            request.getParameter("6"),
+            request.getParameter("7"),
+            request.getParameter("8"),
+            request.getParameter("9")
         });
         response.sendRedirect("index.jsp");
     }
+    int c = 1;
 %>
 <html>
     <head>
@@ -30,19 +38,18 @@
                     <form>
                         <%ArrayList<Question> test = Quiz.getTeste();%>
                         <%for(Question q: test){%>
-                        <h4><%= q.getPergunta() %></h4>
+                        <h4><%=c+"°) "%><%= q.getPergunta() %></h4>
                         <%for(String alternative: q.getAlternativas()){%>
                         <input type="radio" name="<%=test.indexOf(q)%>"
                         value="<%=alternative%>"/><%=alternative%>
                         <%}%>
                         <hr/>
-                        <%}%>
-                        <input type="submit" name="test" value="Concluir"/>
+                        <%c++;}%> <!--Incrementa o numero da pergunta-->
+                        <input type="submit" class="btn btn-blue" name="test" value="Concluir"/>
                     </form>
                 </div>
             </div>
         </div>
-        <hr/>
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
