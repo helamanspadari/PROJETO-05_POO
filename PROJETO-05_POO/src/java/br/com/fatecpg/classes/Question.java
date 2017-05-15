@@ -5,7 +5,6 @@ public class Question {
     private String pergunta;
     private String resposta;
     private String[] alternativas;
-    private String usuario;
     
     public Question(String pergunta, String resposta, String[] alternativas){
         this.pergunta = pergunta;
@@ -36,4 +35,5 @@ public class Question {
     public void setAlternativas(String[] alternativas) {
         this.alternativas = alternativas;
     }
+    
 }

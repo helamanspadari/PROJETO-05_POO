@@ -5,7 +5,14 @@
 <!DOCTYPE html>
 <%
     if(request.getParameter("test")!=null){
-        Quiz.validarTeste(new String[]{
+        String nome = request.getParameter("nome");
+        if(nome=="Ainda estou fazendo"){
+            //TODO
+        }else{
+            
+        }
+        Quiz respostas = new Quiz();
+        respostas.validarTeste(new String[]{
             request.getParameter("0"),
             request.getParameter("1"),
             request.getParameter("2"),
@@ -35,6 +42,9 @@
                         <h1>WebQuiz</h1>
                     </div>
                     <form>
+                        <label value="Insira seu nome: ">
+                        <input type="text" name="nome" placeholder="Seu Nome" required/>
+                        <br><br>
                         <%ArrayList<Question> test = Quiz.getTeste();%>
                         <%for(Question q: test){%>
                         <h4><%=c+"°) "%><%= q.getPergunta() %></h4>

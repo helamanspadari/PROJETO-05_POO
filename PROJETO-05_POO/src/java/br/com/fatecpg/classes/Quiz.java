@@ -1,10 +1,15 @@
 package br.com.fatecpg.classes;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.lang.Comparable;
+import java.util.HashMap;
+import java.util.Map;
 public class Quiz {
-    private static int testesCont = 0;
-    private static double testesGradeSum = 0;
-    private static double ultmaGrade = 0;
+    private int testesCont = 0;
+    private double testesGradeSum = 0;
+    private double ultmaGrade = 0;
     private static ArrayList<Question> teste;
+    private static HashMap<String, ArrayList<String>> hash;
     
     public static ArrayList<Question> getTeste(){
         if(teste == null){
@@ -72,7 +77,7 @@ public class Quiz {
         }
         return teste;
     }
-    public static double validarTeste(String userRespostas[]){
+    public double validarTeste(String userRespostas[]){
         int cont = 0;
         for(int i=0; i<teste.size(); i++){
             if(teste.get(i).getResposta().equals(userRespostas[i])){
@@ -80,18 +85,27 @@ public class Quiz {
             }
         }
         double grade = (double)cont / (double)teste.size();
-        Quiz.ultmaGrade = grade;
-        Quiz.testesGradeSum += grade;
-        Quiz.testesCont++;
+        this.ultmaGrade = grade;
+        this.testesGradeSum += grade;
+        this.testesCont++;
         
         return grade;
     }
-    
-    public static double getUltimaGrade(){
-        return Quiz.ultmaGrade;
+    public void adicionarJogador(String nome){
+        if(hash == null){
+            hash = new HashMap<String, ArrayList<String>>();
+        }
+        ArrayList<String> lst = new ArrayList<String>();
+        lst.add(String.valueOf(getUltimaGrade()));
+        lst.add(String.valueOf(getGradeMedia()));
+        hash.put(nome, lst);
     }
     
-    public static double getGradeMedia(){
-        return Quiz.testesGradeSum/ (double) Quiz.testesCont;
+    public double getUltimaGrade(){
+        return this.ultmaGrade;
+    }
+    
+    public double getGradeMedia(){
+        return this.testesGradeSum/ (double) this.testesCont;
     }
 }
