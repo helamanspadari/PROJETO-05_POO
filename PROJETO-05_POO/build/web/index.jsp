@@ -12,6 +12,9 @@
 	    <div class="section section-white">
 			<div class="container">
 				<div class="row">
+                                    <div class="section-title">
+                                    <h1>Home</h1>
+                                    </div>
 					<div class="col-md-12">
 						<div class="calltoaction-wrapper">
 							<h3>Bem vindo ao <span style="color:#aec62c; text-transform:uppercase;font-size:24px;">Show do PUPO</span>, um quiz feito pelo Grupo 06, proposto para o TP-05 da disciplina POO! </h3><br/><br/>
@@ -27,10 +30,9 @@
 	        	<div class="row">
 	
 				<div class="section-title">
-				<h2>Colaboradores</h2>
+				<h1>Colaboradores</h1>
 				</div>
-		
-		
+                            
 			<ul class="grid cs-style-3">
 	        	<div class="col-md-4 col-sm-6">
 					<figure>

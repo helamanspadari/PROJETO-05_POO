@@ -27,8 +27,7 @@
         <title>Perguntas</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/header.jspf" %>
-        <hr/>
+        <%@include file="WEB-INF/jspf/header.jspf" %>        
         <div class="section section-white">
 	    <div class="container">
 	        <div class="row">
