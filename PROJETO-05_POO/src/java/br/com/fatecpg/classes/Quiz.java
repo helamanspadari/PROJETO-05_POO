@@ -14,8 +14,10 @@ public class Quiz {
             teste.add(q1);
             Question q2 = new Question
             ("1+2?", "3", new String[]{"0","2","3"});
+            teste.add(q2);
             Question q3 = new Question
             ("mario ou maria?", "mario", new String[] {"mario", "maria"});
+            teste.add(q3);
         }
         return teste;
     }
