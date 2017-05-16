@@ -35,5 +35,4 @@ public class Question {
     public void setAlternativas(String[] alternativas) {
         this.alternativas = alternativas;
     }
-    
 }
