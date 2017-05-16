@@ -1,4 +1,3 @@
-<%@page import="sun.security.util.Length"%>
 <%@page import="br.com.fatecpg.classes.Quiz"%>
 <%@page import="br.com.fatecpg.classes.Question"%>
 <%@page import="br.com.fatecpg.classes.Jogador"%>
@@ -19,17 +18,18 @@
             request.getParameter("8"),
             request.getParameter("9")
         });
+        boolean tem=false;
         String nome=request.getParameter("nome");
         for (String nomeJogador : Quiz.pessoas.keySet()) {
-        Jogador j = Quiz.pessoas.get (nomeJogador);
+            Jogador j = Quiz.pessoas.get (nomeJogador);
             if(nome==nomeJogador){
-                
-            }else{
-                
+                tem=true;
             }          
         }
-   
-        for(int i=0;i<Quiz.jogadores.length;i++){}
+        if(tem==false){
+            Quiz.novoJogador(nome);
+        }
+        Quiz.novoJogo(nome, nota);
         response.sendRedirect("index.jsp");
     }
     int c = 1;

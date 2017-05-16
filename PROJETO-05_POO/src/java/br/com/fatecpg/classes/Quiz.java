@@ -102,5 +102,12 @@ public class Quiz {
         pessoas = new HashMap<>();
         pessoas.put(nome, new Jogador());
     }
-    
+    public static void novoJogo(String nome, double pontuacao){
+        Jogador dv=pessoas.get(nome);
+        double mediaPontos;
+        if(dv.getMaiorPontuacao()<pontuacao){
+            dv.setMaiorPontuacao(pontuacao);
+        }
+        
+    }
 }
