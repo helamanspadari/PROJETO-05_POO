@@ -1,10 +1,13 @@
 package br.com.fatecpg.classes;
 import java.util.ArrayList;
+import java.util.HashMap;
 public class Quiz {
     private static int testesCont = 0;
     private static double testesGradeSum = 0;
     private static double ultmaGrade = 0;
     private static ArrayList<Question> teste;
+    public static String[] jogadores;
+    public static HashMap<String, Jogador> pessoas;
     
     public static ArrayList<Question> getTeste(){
         if(teste == null){
@@ -94,4 +97,10 @@ public class Quiz {
     public static double getGradeMedia(){
         return Quiz.testesGradeSum/ (double) Quiz.testesCont;
     }
+    
+    public static void novoJogador(String nome){
+        pessoas = new HashMap<>();
+        pessoas.put(nome, new Jogador());
+    }
+    
 }

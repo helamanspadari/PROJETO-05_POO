@@ -1,11 +1,13 @@
+<%@page import="sun.security.util.Length"%>
 <%@page import="br.com.fatecpg.classes.Quiz"%>
 <%@page import="br.com.fatecpg.classes.Question"%>
+<%@page import="br.com.fatecpg.classes.Jogador"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
     if(request.getParameter("test")!=null){
-        Quiz.validarTeste(new String[]{
+        double nota=Quiz.validarTeste(new String[]{
             request.getParameter("0"),
             request.getParameter("1"),
             request.getParameter("2"),
@@ -17,6 +19,17 @@
             request.getParameter("8"),
             request.getParameter("9")
         });
+        String nome=request.getParameter("nome");
+        for (String nomeJogador : Quiz.pessoas.keySet()) {
+        Jogador j = Quiz.pessoas.get (nomeJogador);
+            if(nome==nomeJogador){
+                
+            }else{
+                
+            }          
+        }
+   
+        for(int i=0;i<Quiz.jogadores.length;i++){}
         response.sendRedirect("index.jsp");
     }
     int c = 1;
