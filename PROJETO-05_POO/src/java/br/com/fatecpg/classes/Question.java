@@ -1,6 +1,4 @@
 package br.com.fatecpg.classes;
-import  java.util.Collections;
-import java.lang.Comparable;
 public class Question {
     private String pergunta;
     private String resposta;

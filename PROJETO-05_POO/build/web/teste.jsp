@@ -5,14 +5,7 @@
 <!DOCTYPE html>
 <%
     if(request.getParameter("test")!=null){
-        String nome = request.getParameter("nome");
-        if(nome=="Ainda estou fazendo"){
-            //TODO
-        }else{
-            
-        }
-        Quiz respostas = new Quiz();
-        respostas.validarTeste(new String[]{
+        Quiz.validarTeste(new String[]{
             request.getParameter("0"),
             request.getParameter("1"),
             request.getParameter("2"),
