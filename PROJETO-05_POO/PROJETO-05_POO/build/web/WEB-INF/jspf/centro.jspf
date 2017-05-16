@@ -1,0 +1,14 @@
+<%@page import="br.com.fatecpg.classes.Quiz"%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div id="centro">
+    <h2>Web Questionario</h2>
+        <h3>Nome do jogador: </h3>
+        <hr/>
+        <h3>Última nota:</h3>
+        <%= 100.0*Quiz.getUltimaGrade() %>%
+        <h3>Média</h3>
+        <%= 100.0*Quiz.getGradeMedia() %>%
+        <hr/>
+        <a href="teste.jsp"><button>Começar Teste</button></a>
+</div>
