@@ -108,6 +108,11 @@ public class Quiz {
         if(dv.getMaiorPontuacao()<pontuacao){
             dv.setMaiorPontuacao(pontuacao);
         }
-        
     }
+    public static void preencheVetor(){  
+        int v[] = new int[10]; //inicializa o array com 10 posições
+        for(int i=0;i<v.length;i++){  
+            v[i] = (int)(Math.random() *21-1); // atribui o valor aleatório à posição i      
+        }  
+    }  
 }

@@ -50,7 +50,8 @@
                     <form>
                         <label value="Insira seu nome: ">
                         <input type="text" name="nome" placeholder="Seu Nome" required/>
-                        <br><br>
+                        <br><br>                       
+                        <%Quiz.preencheVetor();%>
                         <%ArrayList<Question> test = Quiz.getTeste();%>
                         <%for(Question q: test){%>
                         <h4><%=c+"°) "%><%= q.getPergunta() %></h4>
