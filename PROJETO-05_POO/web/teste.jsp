@@ -37,7 +37,7 @@
                     <div class="section-title">
                         <h1>WebQuiz</h1>
                     </div>
-                    <form>
+                    <form action="teste.jsp">
                         <label value="Insira seu nome: ">
                         <input type="text" name="nome" placeholder="Seu Nome" required/>
                         <br><br>
