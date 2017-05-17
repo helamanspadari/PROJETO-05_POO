@@ -42,13 +42,13 @@ public class Quiz {
             ("Quem deu o título de rei a Roberto Carlos?", "Chacrinha", new String[] {"Raul Gil","Silvio Santos","Chacrinha","Cid Moreira"});
             teste.add(q10);
             Question q11 = new Question
-            ("Ney Matogrosso já teve como profisão:", "Polícia da Aeronáutica", new String[] {"Entregador de pizza","Pintor","Mecânico","Polícia da Aeronáutica"});
+            ("Ney Matogrosso já teve como profissão:", "Polícia da Aeronáutica", new String[] {"Entregador de pizza","Pintor","Mecânico","Polícia da Aeronáutica"});
             teste.add(q11);
             Question q12 = new Question
-            ("Ivete Sangalo já teve como profisão:", "Vendedora de marmita", new String[] {"Diarista","Vendedora de marmita","Balconista","Secretária"});
+            ("Ivete Sangalo já teve como profissão:", "Vendedora de marmita", new String[] {"Diarista","Vendedora de marmita","Balconista","Secretária"});
             teste.add(q12);
             Question q13 = new Question
-            ("Marcelo D2 já teve como profisão:", "Porteiro", new String[] {"Funcionário Publico","Porteiro","Motoboy","Zelador"});
+            ("Marcelo D2 já teve como profissão:", "Porteiro", new String[] {"Funcionário Publico","Porteiro","Motoboy","Zelador"});
             teste.add(q13);
             Question q14 = new Question
             ("Quem foi a única brasileira a se apresentar em todas as edições do Rock in Rio Lisboa?", "Ivete Sangalo", new String[] {"Ivete Sangalo","Claudia Leite","Vanessa Camargo","Sandy"});
@@ -66,7 +66,7 @@ public class Quiz {
             ("Qual era o lugar preferido por Vinicius de Moraes em sua casa?", "O banheiro", new String[] {"A sala","A sacada","O quarto","O banheiro"});
             teste.add(q18);
             Question q19 = new Question
-            ("Qual a posição no ranking muldial garota de ipanema ocupa como música mais tocada?", "10ª", new String[] {"10ª","9ª","12ª","6ª"});
+            ("Qual a posição no ranking muldial Garota de Ipanema ocupa como música mais tocada?", "10ª", new String[] {"10ª","9ª","12ª","6ª"});
             teste.add(q19);
             Question q20 = new Question
             ("Qual era o apelido de infância de Raul Seixas?", "Raulzito", new String[] {"Maluquinho","Raulzito","Pluft","Ra"});

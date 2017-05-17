@@ -39,25 +39,25 @@
 						<img src="img/portfolio/luiz.jpg" alt="luiz">
 						<figcaption>
 							<h3>Luiz Spinelli</h3> <!--Nome-->
-							<span style="color:#aec62c;">Bootstrap e estilização</span> <!--O que fez-->
+							<span style="color:#aec62c;">Bootstrap e estilização</span>
 						</figcaption>
 					</figure>
 	        	</div>	
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/andre.jpg" alt="andre add uma foto sua">
+						<img src="img/portfolio/andre.jpg" alt="andre">
 						<figcaption>
 							<h3>André</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span> <!--O que fez-->
+							<span style="color:#aec62c;">...</span>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/helaman.jpg" alt="helaman add uma foto sua">
+						<img src="img/portfolio/helaman.jpg" alt="helaman">
 						<figcaption>
 							<h3>Helaman</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span> <!--O que fez-->
+							<span style="color:#aec62c;">...</span>
 						</figcaption>
 					</figure>
 				</div>
@@ -75,10 +75,10 @@
 				</div>
 				<div class="col-md-4 col-sm-6">
 					<figure>
-						<img src="img/portfolio/raul.jpg" alt="raul add uma foto sua">
+						<img src="img/portfolio/raul.jpg" alt="raul">
 						<figcaption>
 							<h3>Raul</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span> <!--O que fez-->
+							<span style="color:#aec62c;">Questionário e testes</span>
 						</figcaption>
 					</figure>
 				</div>

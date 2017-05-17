@@ -20,7 +20,7 @@
             request.getParameter("8"),
             request.getParameter("9")
         }, nome);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("ranking.jsp");
     }
     int c = 1;
 %>
