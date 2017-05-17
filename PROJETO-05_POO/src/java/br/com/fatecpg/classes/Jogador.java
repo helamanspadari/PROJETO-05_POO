@@ -10,6 +10,12 @@ public class Jogador {
     public Jogador(){
         numJogadas=0;
     }
+    public Jogador(String nome, double mediaPontos, double maiorPontuacao, double totalPontos){
+        this.nome=nome;
+        this.maiorPontuacao=maiorPontuacao;
+        this.mediaPontos=mediaPontos;
+        this.totalPontos=totalPontos;
+    }
     
     public void setJogador(String nome, double mediaPontos, double maiorPontuacao){
         this.nome=nome;

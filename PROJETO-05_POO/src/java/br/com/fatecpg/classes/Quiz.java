@@ -7,6 +7,7 @@ public class Quiz {
     private static double ultmaGrade = 0;
     private static ArrayList<Question> teste;
     private static HashMap<String, Jogador> pessoas = new HashMap<>();
+    private static ArrayList<Jogador> ranking = new ArrayList<>();
     
     public static ArrayList<Question> getTeste(){
         if(teste == null){
@@ -128,5 +129,10 @@ public class Quiz {
         dv.setNumJogadas();
         mediaPontos=dv.getTotalPontos()/dv.getNumJogadas();
         dv.setMediaPontos(mediaPontos);
+        ranking.add(new Jogador(nome, mediaPontos ,dv.getMaiorPontuacao(), dv.getTotalPontos()));
+    }
+
+    public static ArrayList<Jogador> getRanking() {
+        return ranking;
     }
 }

@@ -1,5 +1,8 @@
 <%@page import="br.com.fatecpg.classes.Quiz"%>
 <%@page import="br.com.fatecpg.classes.Question"%>
+<%@page import="br.com.fatecpg.classes.Jogador"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Collections"%>
 <%@page import="java.util.Collections"%>
 <%@page import="java.lang.Comparable"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -23,13 +26,13 @@
                                     <th>Nome</th>
                                     <th>Última pontuação</th>
                                     <th>Pontuação média</th>
-                                    
                                 </tr>
-                                <%for (int i=0;i<10;i++) {%>
+                                <%ArrayList<Jogador> rank = Quiz.getRanking();%>
+                                <%for (Jogador ele : rank) {%>
                                     <tr>
-                                        <td>Nome</td> <!--getNome-->
-                                        <td><%= 100*Quiz.getUltimaGrade()%></td>
-                                        <td><%= 100*Quiz.getGradeMedia()%></td>
+                                        <td><%ele.getNome();%></td> <!--getNome-->
+                                        <td><%= 100*ele.getMaiorPontuacao()%></td>
+                                        <td><%= 100*ele.getMediaPontos()%></td>
                                     </tr>
                                 <%}%>
                             </table>
