@@ -3,10 +3,10 @@
 }
 #menu a{
     color:#ffffff;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 #menu a:hover{
-    color:   #2196f3;
+    color:   #000;
     background-color: #FFF;
 }

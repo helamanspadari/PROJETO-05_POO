@@ -10,10 +10,10 @@
                     <span class="icon-bar"></span>
                 </button>                
             </div>
-            <div class="collapse navbar-collapse col-md-12">
-                <ul id="menu" class="nav navbar-nav navbar-right">
-                    <li class="col-md-04"><a href="index.jsp">Home</a></li>
-                    <li class="col-md-04"><a href="ranking.jsp">Pontuação</a></li>
+            <div class="collapse navbar-collapse">
+                <ul id="menu" class="nav navbar-nav navbar-right col-md-12">
+                    <li class="col-md-6"><a href="index.jsp">Home</a></li>
+                    <li class="col-md-6"><a href="ranking.jsp">Pontuação</a></li>
                 </ul>
             </div>
         </div>
