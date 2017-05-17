@@ -48,7 +48,7 @@
 						<img src="img/portfolio/andre.jpg" alt="andre">
 						<figcaption>
 							<h3>André</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span>
+							<span style="color:#aec62c;">Formatação e ajustes</span>
 						</figcaption>
 					</figure>
 				</div>
