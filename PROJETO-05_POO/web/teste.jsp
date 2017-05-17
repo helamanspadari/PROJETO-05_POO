@@ -2,6 +2,7 @@
 <%@page import="br.com.fatecpg.classes.Question"%>
 <%@page import="br.com.fatecpg.classes.Jogador"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Collections"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -50,9 +51,9 @@
                     <form>
                         <label value="Insira seu nome: ">
                         <input type="text" name="nome" placeholder="Seu Nome" required/>
-                        <br><br>                       
-                        <%Quiz.preencheVetor();%>
+                        <br><br>
                         <%ArrayList<Question> test = Quiz.getTeste();%>
+                        <%Collections.shuffle(test);%>
                         <%for(Question q: test){%>
                         <h4><%=c+"°) "%><%= q.getPergunta() %></h4>
                         <%for(String alternative: q.getAlternativas()){%>

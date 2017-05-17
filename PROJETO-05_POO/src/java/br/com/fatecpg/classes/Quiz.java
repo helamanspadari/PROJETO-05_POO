@@ -6,8 +6,7 @@ public class Quiz {
     private static double testesGradeSum = 0;
     private static double ultmaGrade = 0;
     private static ArrayList<Question> teste;
-    public static String[] jogadores;
-    public static HashMap<String, Jogador> pessoas;
+    private static HashMap<String, Jogador> pessoas;
     
     public static ArrayList<Question> getTeste(){
         if(teste == null){
@@ -102,6 +101,7 @@ public class Quiz {
         pessoas = new HashMap<>();
         pessoas.put(nome, new Jogador());
     }
+    
     public static void novoJogo(String nome, double pontuacao){
         Jogador dv=pessoas.get(nome);
         double mediaPontos;
@@ -109,10 +109,4 @@ public class Quiz {
             dv.setMaiorPontuacao(pontuacao);
         }
     }
-    public static void preencheVetor(){  
-        int v[] = new int[10]; //inicializa o array com 10 posições
-        for(int i=0;i<v.length;i++){  
-            v[i] = (int)(Math.random() *21-1); // atribui o valor aleatório à posição i      
-        }  
-    }  
 }
