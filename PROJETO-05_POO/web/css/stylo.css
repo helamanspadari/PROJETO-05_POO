@@ -1,0 +1,14 @@
+#menu{
+    text-align: center;
+}
+#menu a{
+    color:#ffffff;
+    font-size: 30px;
+}
+
+#menu a:hover{
+    color:   #000;
+    background-color: #FFF;
+    font-size: 40px;
+    font-style: italic;
+}
