@@ -1,10 +1,10 @@
 #menu{
     text-align: center;
-    background-color: #FFF;
+    background-color: #222;
 }
 
 #header{
-    background-color: #FFF;
+    background-color: #222;
 }
 #menu a{
     color:#aec62c;
@@ -14,8 +14,8 @@
 }
 
 #menu a:hover{
-    color:   #000;
-    background-color: #FFF;
-    font-size: 40px;
+    color:   #aec62c;
+    background-color: #222;
+    font-size: 50px;
     font-style: italic;
 }
