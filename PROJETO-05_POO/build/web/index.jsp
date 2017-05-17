@@ -77,8 +77,8 @@
 					<figure>
 						<img src="img/portfolio/raul.jpg" alt="raul add uma foto sua">
 						<figcaption>
-							<h3>Raul</h3> <!--Nome-->
-							<span style="color:#aec62c;">...</span> <!--O que fez-->
+							<h3>Raul Silva</h3> <!--Nome-->
+							<span style="color:#aec62c;">Testes e Criação do Questionário</span> <!--O que fez-->
 						</figcaption>
 					</figure>
 				</div>
