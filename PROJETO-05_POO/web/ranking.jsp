@@ -21,7 +21,7 @@
 				<h1>Pontuação</h1>
 				</div>
                             <div class="col-md-4 col-sm-6">
-                            <table class="table table-bordered table-responsive">
+                            <table id="table" class="table table-bordered table-responsive">
                                 <tr>
                                     <th>Nome</th>
                                     <th>Última pontuação</th>
