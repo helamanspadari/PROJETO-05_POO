@@ -7,7 +7,8 @@
 <!DOCTYPE html>
 <%
     if(request.getParameter("test")!=null){
-        double nota=Quiz.validarTeste(new String[]{
+        String nome=request.getParameter("nome");
+        Quiz.validarTeste(new String[]{
             request.getParameter("0"),
             request.getParameter("1"),
             request.getParameter("2"),
@@ -18,19 +19,7 @@
             request.getParameter("7"),
             request.getParameter("8"),
             request.getParameter("9")
-        });
-        boolean tem=false;
-        String nome=request.getParameter("nome");
-        for (String nomeJogador : Quiz.pessoas.keySet()) {
-            Jogador j = Quiz.pessoas.get (nomeJogador);
-            if(nome==nomeJogador){
-                tem=true;
-            }          
-        }
-        if(tem==false){
-            Quiz.novoJogador(nome);
-        }
-        Quiz.novoJogo(nome, nota);
+        }, nome);
         response.sendRedirect("index.jsp");
     }
     int c = 1;
@@ -54,14 +43,16 @@
                         <br><br>
                         <%ArrayList<Question> test = Quiz.getTeste();%>
                         <%Collections.shuffle(test);%>
+                        <%int parar = 1;%>
                         <%for(Question q: test){%>
+                        <%if(parar>10){break;};%>
                         <h4><%=c+"°) "%><%= q.getPergunta() %></h4>
                         <%for(String alternative: q.getAlternativas()){%>
                         <input type="radio" name="<%=test.indexOf(q)%>"
-                        value="<%=alternative%>"/><%=alternative%>
+                               value="<%=alternative%>"id="<%=alternative%>"/><label for="<%=alternative%>">&nbsp;<%=alternative%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <%}%>
                         <hr/>
-                        <%c++;}%> <!--Incrementa o numero da pergunta-->
+                        <%c++; parar++;}%> <!--Incrementa o numero da pergunta-->
                         <input type="submit" class="btn btn-blue" name="test" value="Concluir"/>
                     </form>
                 </div>

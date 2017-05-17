@@ -25,7 +25,6 @@
                                     <th>Pontuação média</th>
                                     
                                 </tr>
-                                <%Collections.sort(add/*TODO*/);%>
                                 <%for (int i=0;i<10;i++) {%>
                                     <tr>
                                         <td>Nome</td> <!--getNome-->

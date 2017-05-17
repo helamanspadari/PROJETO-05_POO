@@ -6,7 +6,7 @@ public class Quiz {
     private static double testesGradeSum = 0;
     private static double ultmaGrade = 0;
     private static ArrayList<Question> teste;
-    private static HashMap<String, Jogador> pessoas;
+    private static HashMap<String, Jogador> pessoas = new HashMap<>();
     
     public static ArrayList<Question> getTeste(){
         if(teste == null){
@@ -74,7 +74,7 @@ public class Quiz {
         }
         return teste;
     }
-    public static double validarTeste(String userRespostas[]){
+    public static double validarTeste(String userRespostas[],String nome){
         int cont = 0;
         for(int i=0; i<teste.size(); i++){
             if(teste.get(i).getResposta().equals(userRespostas[i])){
@@ -85,6 +85,19 @@ public class Quiz {
         Quiz.ultmaGrade = grade;
         Quiz.testesGradeSum += grade;
         Quiz.testesCont++;
+        
+        boolean tem=false;
+        if(Quiz.pessoas==null){superUser();}     
+        for (String nomeJogador : Quiz.pessoas.keySet()) {
+            Jogador j = Quiz.pessoas.get (nomeJogador);
+            if(nome == null ? nomeJogador == null : nome.equals(nomeJogador)){
+                tem=true;
+            }          
+        }
+        if(tem==false){
+            Quiz.novoJogador(nome);
+        }
+        Quiz.novoJogo(nome, grade);
         
         return grade;
     }
@@ -98,15 +111,22 @@ public class Quiz {
     }
     
     public static void novoJogador(String nome){
-        pessoas = new HashMap<>();
         pessoas.put(nome, new Jogador());
+    }
+    public static void superUser(){
+        pessoas.put("AAA", new Jogador());
     }
     
     public static void novoJogo(String nome, double pontuacao){
         Jogador dv=pessoas.get(nome);
         double mediaPontos;
+        dv.setNome(nome);
         if(dv.getMaiorPontuacao()<pontuacao){
             dv.setMaiorPontuacao(pontuacao);
         }
+        dv.setTotalPontos(pontuacao);
+        dv.setNumJogadas();
+        mediaPontos=dv.getTotalPontos()/dv.getNumJogadas();
+        dv.setMediaPontos(mediaPontos);
     }
 }

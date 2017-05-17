@@ -4,6 +4,7 @@ public class Jogador {
     private String nome;
     private double mediaPontos;
     private double maiorPontuacao;
+    private double totalPontos;
     private int numJogadas;
     
     public Jogador(){
@@ -41,5 +42,19 @@ public class Jogador {
         this.maiorPontuacao = maiorPontuacao;
     }
     
-    
+    public double getTotalPontos() {
+        return totalPontos;
+    }
+
+    public void setTotalPontos(double totalPontos) {
+        this.totalPontos+=totalPontos;
+    }
+
+    public int getNumJogadas() {
+        return numJogadas;
+    }
+
+    public void setNumJogadas() {
+        this.numJogadas++;
+    }
 }
